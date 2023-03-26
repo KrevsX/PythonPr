@@ -8,6 +8,32 @@
 #  metus.
 #  Vestibulum commodo. Ut rhoncus gravida arcu.
 from conection_parameters import collection
+import pymongo
+import json
+
+
+def load_json():
+    with open('data.json') as file:
+        data = json.load(file)
+        return data
+
+
+def create_database():
+    try:
+        client = pymongo.MongoClient("mongodb://localhost:27017/")
+        db = client["Parcial"]
+        collection = db["peliculas"]
+        print("CONECCION ESTABLECIDA...")
+        print(collection.count_documents({}))
+        try:
+            data = load_json()
+            collection.insert_many(data)
+            print("JSON CARGADO....")
+        except:
+            print("ERROR: NO SE HA PODIDO ESTABLECER CONEXION..")
+
+    except:
+        print("ERROR: NO SE HA PODIDO ESTABLECER CONEXION..")
 
 
 def create_movie(json_movies):
