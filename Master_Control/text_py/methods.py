@@ -40,17 +40,20 @@ def search_movies():
     for searching in search:
         print(searching)
 
+
 def search_movies_gte_date(year):
-    query = {"fecha_publicacion.anio":{"$gte": year}}
+    query = {"fecha_publicacion.anio": {"$gte": year}}
     search = collection.find(query)
     for searching in search:
         print(searching)
 
+
 def search_movies_lte_date(year):
-    query = {"fecha_publicacion":{"$lte": year}}
-    selected =collection.find(query)
+    query = {"fecha_publicacion": {"$lte": year}}
+    selected = collection.find(query)
     for document in selected:
         print(document)
+
 
 def search_movies_custom(field, value):
     query = {field: value}
