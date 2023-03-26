@@ -10,9 +10,10 @@
 
 
 import pymongo
+
 try:
     client = pymongo.MongoClient("mongodb://localhost:27017")
-    db=client["Parcial"]
+    db = client["Parcial"]
     collection = db["peliculas"]
     print("CONECCION ESTABLECIDA...")
 
