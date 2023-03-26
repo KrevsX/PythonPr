@@ -12,12 +12,22 @@ from methods import *
 
 while True:
     print("MENU DE OPCIONES")
-    print("1. BUSCAR LIBRO: ")
-    print("2. AGREGAR NUEVO LIBRO: ")
-    print("3. MODIFICAR DATOS DE LIBROS: ")
-    print("4. ELIMINAR LIBRO: ")
-    print("5. AGREGAR NUEVO LIBRO: ")
-    option = int(input("PRESIONA EL NUMERO A SELECCIONAR/**"))
-    if option == 2:
+    print("1. BUSCAR PELICULAS: ")
+    print("2. AGREGAR NUEVA PELICULA: ")
+    print("3. MODIFICAR DATOS DE PELICULAS: ")
+    print("4. ELIMINAR PELICULA: ")
+    print("5. SALIR: ")
+    option = (input("PRESIONA EL NUMERO A SELECCIONAR/**"))
+    if option == '1':
+        gerenate_search()
+    elif option == '2':
         new_movie = create_json_movies()
         create_movie(new_movie)
+    elif option == '3':
+        id = int(input("INGRESAR ID DE LA PELICULA A MODIFICAR/..."))
+        movie = create_json_updates()
+        update_movie(id, movie)
+    elif option == '4':
+        id = int(input("INGRESAR ID DE LA PELICULA A ELIMINAR/...."))
+        moviedeleted = delete_movie(id)
+        delete_movie(moviedeleted)
