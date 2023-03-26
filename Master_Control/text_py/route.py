@@ -7,16 +7,14 @@
 #  Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget
 #  metus.
 #  Vestibulum commodo. Ut rhoncus gravida arcu.
-
 import pymongo
-
+import json
 
 client = pymongo.MongoClient("mongodb://localhost:27017")
 db = client["Parcial"]
 collection = db["peliculas"]
+with open('peliculas.json') as file:
+     data = json.load(file)
+collection.insert_many(data)
+print(collection.count_documents({}))
 
-
-if "peliculas" not in db.list_collection_names():
-    print()
-else:
-    print("La colección ya existe en la base de datos.")

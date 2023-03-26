@@ -10,6 +10,7 @@
 from functions import *
 from methods import *
 
+
 while True:
     print("MENU DE OPCIONES")
     print("1. CREAR BASE DE DATOS LOCAL: ")
@@ -20,8 +21,11 @@ while True:
     print("6. SALIR: ")
 
     option = (input("PRESIONA EL NUMERO A SELECCIONAR/**"))
-    if option == 1:
-        create_database()
+    if option == '1':
+        from route import *
+        from conection_parameters import *
+
+        print("Hurray base de Datos Creada EXITOSAMENTE!!!...")
     elif option == '2':
         generate_search()
     elif option == '3':
