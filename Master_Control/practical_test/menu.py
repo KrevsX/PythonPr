@@ -23,7 +23,6 @@ while True:
     if option == '1':
         from route import *
         from conection_parameters import *
-
         print("Hurray base de Datos Creada EXITOSAMENTE!!!...")
     elif option == '2':
         generate_search()
