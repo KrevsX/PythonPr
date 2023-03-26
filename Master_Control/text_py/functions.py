@@ -65,8 +65,7 @@ def create_json_movies():
     return new_book
 
 
-def gerenate_search():
-
+def generate_search():
     print("OPCIONES DE BUSQUEDA: ")
     print("1. BUSQUEDA GLOBAL: ***")
     print("2. BUSQUEDA POR FECHA DE PUBLICACION: ***")
@@ -82,7 +81,7 @@ def gerenate_search():
         print("1. Ver Publicaciones mayor segun año:")
         print("2. Ver Publicaciones Menor segun año:")
         toption = input("Opcion = ")
-        while toption not in ['1','2']:
+        while toption not in ['1', '2']:
             print("INGRESA UNA OPCION VALIDA******")
             toption = input("Opcion = ")
         if toption == '1':
@@ -93,6 +92,14 @@ def gerenate_search():
             search_movies_lte_date(ano)
         else:
             print("Ingrese un Valor Valido")
+    elif option == '3':
+        claves = "clasificacion, titulo, director, distribuidor, tipo_pelicula"
+        print("INDICES PERMITIDOS: \n", claves)
+        field = input("Ingrese un Indice:")
+        value = input("Ingrese el valor a Buscar:")
+        search_movies_custom(field, value)
+    else:
+        print("OPCION NO VALIDA/****")
 
 
 def create_json_updates():

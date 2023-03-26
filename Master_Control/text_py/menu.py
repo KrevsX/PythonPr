@@ -19,7 +19,7 @@ while True:
     print("5. SALIR: ")
     option = (input("PRESIONA EL NUMERO A SELECCIONAR/**"))
     if option == '1':
-        gerenate_search()
+        generate_search()
     elif option == '2':
         new_movie = create_json_movies()
         create_movie(new_movie)
