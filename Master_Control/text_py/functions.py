@@ -49,7 +49,7 @@ def create_json_movies():
         print("No se permiten espacios vacios..")
         anio = int(input("AÑO: "))
 
-    new_book = {
+    new_movie = {
         "_id": _id,
         "clasificacion": clasificacion,
         "titulo": titulo,
@@ -62,7 +62,7 @@ def create_json_movies():
             "anio": anio
         }
     }
-    return new_book
+    return new_movie
 
 
 def generate_search():
@@ -144,7 +144,7 @@ def create_json_updates():
             print("No se permiten espacios vacios..")
             anio = int(input("AÑO: "))
 
-        new_book = {
+        new_movie = {
             "clasificacion": clasificacion,
             "titulo": titulo,
             "director": director,
@@ -156,7 +156,7 @@ def create_json_updates():
                 "anio": anio
             }
         }
-        return new_book
+        return new_movie
     elif option == '2':
         claves = "_id, clasificacion, titulo, director, distribuidor, tipo_pelicula, fecha_publicacion, dia, mes, anio"
         print("Los Indices a Utilizar son:")
