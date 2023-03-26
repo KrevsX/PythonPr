@@ -10,7 +10,6 @@
 from functions import *
 from methods import *
 
-
 while True:
     print("MENU DE OPCIONES")
     print("1. CREAR BASE DE DATOS LOCAL: ")

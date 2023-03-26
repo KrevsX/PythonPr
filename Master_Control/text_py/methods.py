@@ -9,7 +9,6 @@
 #  Vestibulum commodo. Ut rhoncus gravida arcu.
 from conection_parameters import collection
 
-
 def create_movie(json_movies):
     insert = collection.insert_one(json_movies)
     print("Datos Ingresados Correctamente")
