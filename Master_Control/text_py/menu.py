@@ -36,6 +36,7 @@ while True:
         moviedeleted = delete_movie(id)
         delete_movie(moviedeleted)
     elif option == '6':
+        print("BYE  BYEE  AMIX")
         break
     else:
         print("SELECCIONA UNA OPCION VALIDA/*****")

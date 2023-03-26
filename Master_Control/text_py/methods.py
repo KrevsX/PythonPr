@@ -75,7 +75,7 @@ def search_movies_gte_date(year):
 
 
 def search_movies_lte_date(year):
-    query = {"fecha_publicacion": {"$lte": year}}
+    query = {"fecha_publicacion.anio": {"$lte": year}}
     selected = collection.find(query)
     for document in selected:
         print(document)
