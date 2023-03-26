@@ -1,0 +1,121 @@
+[{
+  "_id": 1,
+  "clasificacion": "A",
+  "titulo": "Rapidos y Furisos",
+  "director": "Esteban Hernández Castelló",
+  "distribuidor": "Universal Pictures",
+  "tipo_pelicula": "Accion",
+  "fecha_publicacion": {
+    "dia": 11,
+    "mes": "Marzo",
+    "anio": 2009
+  }
+},{
+  "_id": 2,
+  "clasificacion": "D",
+  "titulo": "Rapidos y Furiosos 2",
+  "director": "Rip Van Winkle",
+  "distribuidor": "Universal Pictures",
+  "tipo_pelicula": "Accion",
+  "fecha_publicacion": {
+    "dia": 11,
+    "mes": "Marzo",
+    "anio": 2011
+  }
+},{
+  "_id": 3,
+  "clasificacion": "E",
+  "titulo": "Avatar",
+  "director": "James Cameron",
+  "distribuidor": "20th Century Fox",
+  "tipo_pelicula": "Aventura",
+  "fecha_publicacion": {
+    "dia": 15,
+    "mes": "Septiembre",
+    "anio": 2009
+  }
+},{
+  "_id": 4,
+  "clasificacion": "R",
+  "titulo": "Avengers Endgame",
+  "director": "Russo Brothers",
+  "distribuidor": "Walt Disney Studios",
+  "tipo_pelicula": "Accion",
+  "fecha_publicacion": {
+    "dia": 15,
+    "mes": "Agosto",
+    "anio": 2019
+  }
+},{
+  "_id": 5,
+  "clasificacion": "A",
+  "titulo": "Titanic",
+  "director": "James Cameron",
+  "distribuidor": "20th Century Fox",
+  "tipo_pelicula": "Romance",
+  "fecha_publicacion": {
+    "dia": 1,
+    "mes": "Enero",
+    "anio": 1997
+  }
+},{
+  "_id": 6,
+  "clasificacion": "C",
+  "titulo": "Star Wars",
+  "director": "J. J. Abrams",
+  "distribuidor": "Walt Disney Studios",
+  "tipo_pelicula": "Accion",
+  "fecha_publicacion": {
+    "dia": 25,
+    "mes": "Febrero",
+    "anio": 2015
+  }
+},{
+  "_id": 7,
+  "clasificacion": "A",
+  "titulo": "Avengers Infinity War",
+  "director": "Russo Brothers",
+  "distribuidor": "Walt Disney Studios",
+  "tipo_pelicula": "Accion",
+  "fecha_publicacion": {
+    "dia": 29,
+    "mes": "Abril",
+    "anio": 2018
+  }
+},{
+  "_id": 8,
+  "clasificacion": "C",
+  "titulo": "Jurassic World",
+  "director": "Colin Trevorrow",
+  "distribuidor": "Universal Pictures",
+  "tipo_pelicula": "Accion",
+  "fecha_publicacion": {
+    "dia": 11,
+    "mes": "Mayo",
+    "anio": 2015
+  }
+},{
+  "_id": 9,
+  "clasificacion": "A",
+  "titulo": "Harry Potter y la piedra filosofal",
+  "director": "Chris Columbus",
+  "distribuidor": "Warner Bros",
+  "tipo_pelicula": "Magica",
+  "fecha_publicacion": {
+    "dia": 15,
+    "mes": "Noviembre",
+    "anio": 2001
+  }
+},{
+  "_id": 10,
+  "clasificacion": "A",
+  "titulo": "Harry Potter y las Reliquias de la muerte Parte 1",
+  "director": "David Yates",
+  "distribuidor": "Warner Bros",
+  "tipo_pelicula": "Magica",
+  "fecha_publicacion": {
+    "dia": 20,
+    "mes": "Diciembre",
+    "anio": 2010
+  }
+}]
