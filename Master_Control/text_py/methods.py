@@ -13,7 +13,7 @@ import json
 
 
 def load_json():
-    with open('data.json') as file:
+    with open('peliculas.json') as file:
         data = json.load(file)
         return data
 
