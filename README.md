@@ -1,1 +1,2 @@
-# PythonPr
+# Practicas... 
+#Relacionadas a Dise;o de Base de Datos No Relacionale... via Python
