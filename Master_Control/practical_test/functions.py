@@ -171,3 +171,4 @@ def create_json_updates():
         return info_movies
     else:
         print("LOS DATOS INGRESADOS SON INVALIDOS.....")
+
