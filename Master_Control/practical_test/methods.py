@@ -59,3 +59,4 @@ def search_movies_custom(field, value):
     search = collection.find(query)
     for document in search:
         print(document)
+
