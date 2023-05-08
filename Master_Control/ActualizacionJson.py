@@ -18,7 +18,6 @@ collection = db["employees"]
 
 collection.update_one({"first_name": "Nancy"}, {"$set": {"first_name": "KEVIN VAN WINKLE"}})
 
-
 # este codigo solamente es para poder
 # comprobar si se ha echo el cambio...
 # busqueda = collection.find()
