@@ -9,6 +9,7 @@
 #  Vestibulum commodo. Ut rhoncus gravida arcu.
 from conection_parameters import collection
 
+
 def create_movie(json_movies):
     insert = collection.insert_one(json_movies)
     print("Datos Ingresados Correctamente")
@@ -26,11 +27,13 @@ def update_movie(_id, json_movies_update):
     print("Datos Actualizados Correctamente")
     print(updates.modified_count)
 
+
 def delete_movie(_id):
     query = {"_id": _id}
     delete = collection.delete_one(query)
     print("Datos Eliminados Correctamente")
     print(delete.deleted_count)
+
 
 def search_movies():
     search = collection.find()
@@ -44,11 +47,13 @@ def search_movies_gte_date(year):
     for searching in search:
         print(searching)
 
+
 def search_movies_lte_date(year):
     query = {"fecha_publicacion.anio": {"$lte": year}}
     selected = collection.find(query)
     for document in selected:
         print(document)
+
 
 def search_movies_custom(field, value):
     query = {field: value}

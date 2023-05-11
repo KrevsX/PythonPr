@@ -9,6 +9,7 @@
 #  Vestibulum commodo. Ut rhoncus gravida arcu.
 from methods import *
 
+
 def create_json_movies():
     _id = int(input("ID: "))
     while not _id:
@@ -171,6 +172,3 @@ def create_json_updates():
         return info_movies
     else:
         print("LOS DATOS INGRESADOS SON INVALIDOS.....")
-
-
-
