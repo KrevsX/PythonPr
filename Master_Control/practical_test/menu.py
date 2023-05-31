@@ -42,4 +42,3 @@ while True:
         break
     else:
         print("SELECCIONA UNA OPCION VALIDA/*****")
-

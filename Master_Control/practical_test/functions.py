@@ -9,7 +9,6 @@
 #  Vestibulum commodo. Ut rhoncus gravida arcu.
 from methods import *
 
-
 def create_json_movies():
     _id = int(input("ID: "))
     while not _id:

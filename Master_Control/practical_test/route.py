@@ -17,3 +17,4 @@ with open('peliculas.json') as file:
      data = json.load(file)
 collection.insert_many(data)
 print(collection.count_documents({}))
+
