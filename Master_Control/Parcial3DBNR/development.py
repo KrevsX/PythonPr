@@ -23,24 +23,30 @@ while True:
 
     option = (input("PRESIONA EL NUMERO A SELECCIONAR/**"))
     if option == '1':
-        from connection_parameters import*
+        from connection_parameters import *
     elif option == '2':
         from funciones import *
+
         Ejercicio_1()
     elif option == '3':
         from funciones import *
+
         Ejercicio_2()
     elif option == '4':
         from funciones import *
+
         Ejercicio_3()
     elif option == '5':
         from funciones import *
+
         Ejercicio_4()
     elif option == '6':
-        from funciones import*
+        from funciones import *
+
         Ejercicio_5()
     elif option == '7':
         from funciones import *
+
         Ejercicio_6()
     elif option == '8':
         print("BYEE-BYEE")
