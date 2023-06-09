@@ -9,20 +9,21 @@
 #  Vestibulum commodo. Ut rhoncus gravida arcu.
 import pymongo
 
-#from connection_parameters import *
-#coneccion con el fin de llevar a cabo las consultas...
+# from connection_parameters import *
+# coneccion con el fin de llevar a cabo las consultas...
 uri = "mongodb+srv://root:0000@cluster0.1jaakr4.mongodb.net/?retryWrites=true&w=majority"
 client = pymongo.MongoClient(uri)
-db=client["KevinLemus"]
+db = client["KevinLemus"]
 colecciones = db.list_collection_names()
 if len(colecciones) > 0:
     print("Coleccion cargada............")
 else:
     print("Error al cargar la Coleccion....")
 
-#Probando que se extraen los archivos de MongoAtlas.....
-#collection = db["customers"]
-#for revCollection in collection.find():
+
+# Probando que se extraen los archivos de MongoAtlas.....
+# collection = db["customers"]
+# for revCollection in collection.find():
 #    print (revCollection)
 def Ejercicio_1():
     query = db.orders.find({
@@ -35,6 +36,7 @@ def Ejercicio_1():
     print('todas las órdenes que incluyen al menos un detalle de un producto con un precio unitario mayor a $10.')
     for orden in query:
         print(orden)
+
 
 def Ejercicio_2():
     from datetime import datetime
@@ -65,9 +67,12 @@ def Ejercicio_2():
             }
         }
     ])
-    print('Nombre completo y número telefónico de los empleados que han sido responsables de órdenes que se hayan enviado antes del 1 de febrero de 2006')
+    print(
+        'Nombre completo y número telefónico de los empleados que han sido responsables de órdenes que se hayan '
+        'enviado antes del 1 de febrero de 2006')
     for empleado in query:
         print(empleado)
+
 
 def Ejercicio_3():
     query = db.orders.find({
@@ -76,6 +81,7 @@ def Ejercicio_3():
     print('Ordenes realizadas por el cliente con ID 27.')
     for orden in query:
         print(orden)
+
 
 def Ejercicio_4():
     query = db.orders.aggregate([
@@ -109,6 +115,7 @@ def Ejercicio_4():
     print('Detalles de los productos del pedido con ID 30.')
     for detalle in query:
         print(detalle)
+
 
 def Ejercicio_5():
     query = db.orders.aggregate([
